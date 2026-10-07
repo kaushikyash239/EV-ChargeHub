@@ -1,0 +1,36 @@
+<!-- profile page -->
+<div class="flex items-start gap-7 max-[860px]:flex-col">
+  <aside class="w-65 shrink-0 text-center bg-surface border border-border rounded-lg shadow-card p-7 max-[860px]:w-full">
+    <div id="profile-avatar"
+      class="flex items-center justify-center rounded-full text-white font-bold shrink-0 bg-primary tracking-[0.02em] w-25 h-25 text-3xl mx-auto mb-3.5 border-[3px] border-primary-soft"></div>
+    <h2 id="profile-name" class="m-0 mb-1 text-lg">--</h2>
+    <p id="profile-email-small" class="m-0 mb-4.5 text-sm text-text-muted"></p>
+
+    <button id="edit-profile-btn"
+      class="inline-flex items-center justify-center gap-2 font-semibold whitespace-nowrap cursor-pointer border border-transparent rounded-md transition duration-150 active:translate-y-px text-base px-5.5 py-3 text-white bg-primary hover:bg-primary-dark w-full mb-4">Edit Profile</button>
+
+    <div class="flex flex-col border-t border-border pt-3">
+      <a href="#" id="change-password-link" class="flex items-center gap-2.5 px-1 py-2.5 text-sm text-text hover:text-primary"><i class="fa-solid fa-key"></i> Change Password</a>
+      <a href="#" id="notification-settings-link" class="flex items-center gap-2.5 px-1 py-2.5 text-sm text-text hover:text-primary"><i class="fa-solid fa-bell"></i> Notification Settings</a>
+    </div>
+  </aside>
+
+  <div class="flex-1 min-w-0 bg-surface border border-border rounded-lg shadow-card px-8 py-7">
+    <h1 class="text-3xl font-bold mb-6">My Profile</h1>
+
+    <div id="profile-details">
+    </div>
+
+    <h2 class="text-lg font-bold mt-8 mb-4 pt-4 border-t border-border">Payment Methods</h2>
+    <div id="payment-list" class="flex flex-col gap-3">
+    </div>
+    <button id="add-payment-btn"
+      class="inline-flex items-center justify-center gap-2 font-semibold whitespace-nowrap cursor-pointer border border-transparent rounded-md transition duration-150 active:translate-y-px text-sm px-3.5 py-2 bg-surface text-text border-border hover:border-primary hover:text-primary mt-3.5">
+      <i class="fa-solid fa-plus"></i> Add Payment Method
+    </button>
+
+    <h2 class="text-lg font-bold mt-8 mb-4 pt-4 border-t border-border">Booking History</h2>
+    <div id="history-list" class="flex flex-col gap-3.5">
+    </div>
+  </div>
+</div>

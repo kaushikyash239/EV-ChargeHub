@@ -1,0 +1,28 @@
+spring:
+     mongodb:
+      uri: YOUR_MONGODB_URI
+      database: evchargehub
+      auto-index-creation: true
+     mail:
+        host: smtp.gmail.com
+        port: 587
+        username: kaushikyash239@gmail.com
+        password: YOUR_PASSWORD
+        properties:
+          mail:
+            smtp:
+              auth: true
+              starttls:
+                enable: true
+
+server:
+  port: 8081
+
+logging:
+  level:
+     org.springframework.security: INFO
+
+openchargemap:
+  api-key: YOUR_OPENCHARGEMAP_API_KEY
+
+

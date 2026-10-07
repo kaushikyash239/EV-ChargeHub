@@ -1,0 +1,49 @@
+<!-- home page -->
+<section class="flex items-center gap-10 pt-8 pb-12 max-[900px]:flex-col">
+  <div class="flex-1 min-w-0">
+    <h1 class="text-[2.75rem] leading-[1.15] font-extrabold mb-4 max-[520px]:text-3xl">
+      Find. Book. Charge.<br />
+      Go with <span class="text-primary">EV ChargeHub</span>
+    </h1>
+    <p class="text-text-muted text-base mb-7 max-w-[34rem]">Find nearby EV charging stations, check availability, and book your slot in seconds.</p>
+
+    <div class="flex gap-3 max-w-[34rem] max-[520px]:flex-col">
+      <input type="text" id="home-search-input" placeholder="Search..."
+        class="flex-1 font-sans text-base px-3.5 py-3 border border-border rounded-md bg-surface text-text outline-none transition duration-150 focus:border-primary focus:shadow-[0_0_0_3px_var(--color-primary-soft)]" />
+      <button class="inline-flex items-center justify-center gap-2 font-semibold whitespace-nowrap cursor-pointer border border-transparent rounded-md transition duration-150 active:translate-y-px text-base px-5.5 py-3 text-white bg-primary hover:bg-primary-dark" id="home-find-btn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        Find Nearby Stations
+      </button>
+    </div>
+  </div>
+
+  <div class="flex-1 min-w-0">
+    <img src="assets/images/hero-car.png" alt="Electric vehicle charging at a green EV ChargeHub station" class="rounded-lg" />
+  </div>
+</section>
+
+<section class="grid gap-5 bg-surface border border-border rounded-lg shadow-card p-7
+                 [grid-template-columns:repeat(4,1fr)]
+                 max-[900px]:[grid-template-columns:repeat(2,1fr)]
+                 max-[520px]:[grid-template-columns:1fr]">
+  <div>
+    <div class="flex items-center justify-center rounded-full w-11 h-11 bg-primary-soft text-primary text-lg"><i class="fa-solid fa-location-dot"></i></div>
+    <h3 class="text-base mt-3.5 mb-1.5 font-bold">Find Nearby Stations</h3>
+    <p class="text-sm text-text-muted m-0">Charge your EV wherever you are.</p>
+  </div>
+  <div>
+    <div class="flex items-center justify-center rounded-full w-11 h-11 bg-primary-soft text-primary text-lg"><i class="fa-solid fa-bolt"></i></div>
+    <h3 class="text-base mt-3.5 mb-1.5 font-bold">Real-time Availability</h3>
+    <p class="text-sm text-text-muted m-0">See live charging station availability.</p>
+  </div>
+  <div>
+    <div class="flex items-center justify-center rounded-full w-11 h-11 bg-primary-soft text-primary text-lg"><i class="fa-solid fa-clipboard-check"></i></div>
+    <h3 class="text-base mt-3.5 mb-1.5 font-bold">Book In Seconds</h3>
+    <p class="text-sm text-text-muted m-0">Reserve your spot with ease.</p>
+  </div>
+  <div>
+    <div class="flex items-center justify-center rounded-full w-11 h-11 bg-primary-soft text-primary text-lg"><i class="fa-solid fa-shield-halved"></i></div>
+    <h3 class="text-base mt-3.5 mb-1.5 font-bold">Secure &amp; Reliable</h3>
+    <p class="text-sm text-text-muted m-0">Trusted network, friction-free charging.</p>
+  </div>
+</section>

@@ -1,0 +1,13 @@
+<h1 class="text-3xl font-bold mb-6">My Bookings</h1>
+
+<div class="booking-tabs flex gap-7 border-b border-border mb-5">
+  <button class="tab-btn cursor-pointer bg-transparent border-none font-sans text-sm font-semibold text-text-muted pt-2.5 pb-3 px-0 border-b-2 border-transparent [&.active]:text-primary [&.active]:border-primary active" data-status="upcoming">Upcoming</button>
+  <button class="tab-btn cursor-pointer bg-transparent border-none font-sans text-sm font-semibold text-text-muted pt-2.5 pb-3 px-0 border-b-2 border-transparent [&.active]:text-primary [&.active]:border-primary" data-status="completed">Completed</button>
+  <button class="tab-btn cursor-pointer bg-transparent border-none font-sans text-sm font-semibold text-text-muted pt-2.5 pb-3 px-0 border-b-2 border-transparent [&.active]:text-primary [&.active]:border-primary" data-status="cancelled">Cancelled</button>
+  <button class="tab-btn cursor-pointer bg-transparent border-none font-sans text-sm font-semibold text-text-muted pt-2.5 pb-3 px-0 border-b-2 border-transparent [&.active]:text-primary [&.active]:border-primary" data-status="favorites">Favorites</button>
+</div>
+
+<!-- bookings page -->
+<div class="font-semibold text-text-muted text-sm mb-3">All Bookings</div>
+<div id="booking-list" class="flex flex-col gap-4">
+</div>

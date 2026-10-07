@@ -1,0 +1,22 @@
+# IntelliJ IDEA
+.idea/
+**/.idea/
+
+# Maven build files
+**/target/
+
+# Local environment files
+.env
+.env.*
+**/.env
+**/.env.*
+
+# Spring Boot local configuration / secrets
+backend/src/main/resources/application.yml
+backend/src/main/resources/application-*.yml
+
+# Keep the safe example configuration
+!backend/src/main/resources/application-example.yml
+
+# VS Code temporary files
+frontend/js/tempCodeRunnerFile.js

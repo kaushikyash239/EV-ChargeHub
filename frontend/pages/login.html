@@ -1,0 +1,65 @@
+<!-- login page -->
+<div class="flex items-center justify-center pt-8 pb-12">
+  <div
+    class="flex w-full overflow-hidden max-w-[900px] bg-surface border border-border rounded-lg shadow-card max-[760px]:flex-col-reverse">
+    <div class="flex-1 p-10">
+      <h1 id="login-heading" class="text-2xl mb-1.5">Welcome Back!</h1>
+      <p id="login-subheading" class="text-text-muted mb-7 text-base">Login to continue your journey</p>
+
+      <form id="login-form">
+        <div class="hidden overflow-hidden" id="register-fields">
+          <div class="relative mb-4.5">
+            <i class="fa-solid fa-id-card absolute left-3.5 top-1/2 -translate-y-1/2 text-text-muted"></i>
+            <input type="text" id="register-fullname" placeholder="Full Name"
+              class="w-full font-sans text-base pl-10 pr-3.5 py-3 border border-border rounded-md bg-surface text-text outline-none transition duration-150 focus:border-primary focus:shadow-[0_0_0_3px_var(--color-primary-soft)]" />
+          </div>
+          <div class="relative mb-4.5">
+            <i class="fa-solid fa-envelope absolute left-3.5 top-1/2 -translate-y-1/2 text-text-muted"></i>
+            <input type="email" id="register-email" placeholder="Email Address"
+              class="w-full font-sans text-base pl-10 pr-3.5 py-3 border border-border rounded-md bg-surface text-text outline-none transition duration-150 focus:border-primary focus:shadow-[0_0_0_3px_var(--color-primary-soft)]" />
+          </div>
+        </div>
+
+        <div class="relative mb-4.5" id="login-identifier-wrapper">
+          <i class="fa-solid fa-user absolute left-3.5 top-1/2 -translate-y-1/2 text-text-muted"></i>
+          <input type="email" id="login-identifier" placeholder="Email ID" required
+            class="w-full font-sans text-base pl-10 pr-3.5 py-3 border border-border rounded-md bg-surface text-text outline-none transition duration-150 focus:border-primary focus:shadow-[0_0_0_3px_var(--color-primary-soft)]" />
+        </div>
+
+        <div class="relative mb-4.5">
+          <i class="fa-solid fa-lock absolute left-3.5 top-1/2 -translate-y-1/2 text-text-muted"></i>
+          <input type="password" id="login-password" placeholder="Password" required
+            class="w-full font-sans text-base pl-10 pr-3.5 py-3 border border-border rounded-md bg-surface text-text outline-none transition duration-150 focus:border-primary focus:shadow-[0_0_0_3px_var(--color-primary-soft)]" />
+          <i class="fa-solid fa-ellipsis cursor-pointer absolute right-3.5 top-1/2 -translate-y-1/2 text-text-muted"
+            id="toggle-password"></i>
+        </div>
+
+        <div class="hidden relative mb-4.5" id="register-confirm-password-wrapper">
+          <i class="fa-solid fa-lock absolute left-3.5 top-1/2 -translate-y-1/2 text-text-muted"></i>
+          <input type="password" id="register-confirm-password" placeholder="Confirm Password"
+            class="w-full font-sans text-base pl-10 pr-3.5 py-3 border border-border rounded-md bg-surface text-text outline-none transition duration-150 focus:border-primary focus:shadow-[0_0_0_3px_var(--color-primary-soft)]" />
+        </div>
+
+<a href="#"
+   id="forgot-password-link"
+   class="block text-right text-sm text-primary font-semibold mb-5">
+  Forgot Password?
+</a>
+        <button type="submit" id="login-submit-btn"
+          class="inline-flex items-center justify-center gap-2 font-semibold whitespace-nowrap cursor-pointer border border-transparent rounded-md transition duration-150 active:translate-y-px text-base px-5.5 py-3 text-white bg-primary hover:bg-primary-dark w-full">Login</button>
+        <p id="login-status" class="mt-3 text-sm min-h-[1.2em]"></p>
+
+        <div class="border-t border-border mt-6 mb-5"></div>
+
+        <p class="text-center text-sm text-text-muted m-0">
+          <span id="register-toggle-label">Don't have an account?</span>
+          <a href="#" id="register-toggle-link" class="text-primary font-bold ml-1">Register</a>
+        </p>
+      </form>
+    </div>
+
+    <div class="flex-1 flex items-center justify-center bg-surface p-6 max-[760px]:p-0">
+      <img src="assets/images/login-graphic.png" alt="EV charging station illustration" class="rounded-lg w-full" />
+    </div>
+  </div>
+</div>
